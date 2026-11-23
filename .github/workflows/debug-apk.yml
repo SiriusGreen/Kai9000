@@ -22,7 +22,7 @@ jobs:
             echo "::error title=Gradle failed::$msg"
           fi
           exit $code
-          - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v4
         with:
           name: kai-debug-apk
           path: androidApp/build/outputs/apk/foss/debug/*.apk
